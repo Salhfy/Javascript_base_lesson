@@ -152,9 +152,12 @@ if(num>0){
  }
 
 //Q4
-for(let numbers=0;numbers<100;numbers++){
-  console.log(numbers);
+let Array = [];
+for(let numbers=0;numbers<=99;numbers++){
+  Array.push(numbers);
 }
+console.log(Array);
+
 //Q5
 for(let mixed of [4, '2', 5, '8', '9', 0, 1]){
   if (mixed % 2 == 0 ){
