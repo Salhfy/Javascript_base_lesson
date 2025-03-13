@@ -170,14 +170,3 @@ for (let i = 0; i < mixed.length; i++) {
 };
 
 //ex
-let language2 =[];
-
-language2[0] = 'Javascript';
-language2[1] = 'PHP';
-language2[2] = 'Ruby';
-language2[3] = 'Python';
-language2[4] = 'Go';
-
-let text2 =(`私は${language2[0]}を勉強中です。
-次は${language2[1]}を勉強予定です。`);
-console.log(text2);
