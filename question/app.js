@@ -159,15 +159,18 @@ for(let numbers=0;numbers<=99;numbers++){
 console.log(Array);
 
 //Q5
-for(let mixed of [4, '2', 5, '8', '9', 0, 1]){
-  if (mixed % 2 == 0 ){
+let mixed = [4, '2', 5, '8', '9', 0, 1];
+
+for (let i = 0; i < mixed.length; i++) {
+  if (typeof mixed[i] == 'number' && mixed[i]%2===0){
     console.log('even');
-  }else if(mixed % 2 == 1 ){
+  }else if(typeof mixed[i] == 'number' && mixed[i]%2===1){
     console.log('odd');
   }else{
     console.log('not number');
   }
-}
+};
+
 //ex
 let language2 =[];
 
