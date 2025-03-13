@@ -127,8 +127,8 @@ function trainning2(x,y){
   let result = x + y;
   return result;
 };
-let num5 = 2
-let num6 = 63
+let num5 = remainder(5,3)
+let num6 = trainning(7,9)
 console.log( num5 + 'と' + num6 + 'を足した和は'+ trainning2(num5,num6) + 'です。');
 
 //応用
@@ -148,23 +148,27 @@ if(num>0){
   console.log('num is 0');
  }
 
-//Q4
-let numbers = [];
-for(let numbers=0;numbers<100;numbers++){
-  console.log(numbers);
+//Q4*****************************************************
+let Array = [];
+for(let numbers=0;numbers<=99;numbers++){
+  Array.push(numbers);
 }
-//Q5
+console.log(Array);
+
+//Q5****************************************************
+
 let mixed = [4, '2', 5, '8', '9', 0, 1];
 
 for (let i = 0; i < mixed.length; i++) {
-  if (mixed[i] % 2 == 0 ){
+  if (typeof mixed[i] == 'number' && mixed[i]%2===0){
     console.log('even');
-  }else if(mixed[i] % 2 == 1 ){
+  }else if(typeof mixed[i] == 'number' && mixed[i]%2===1){
     console.log('odd');
   }else{
     console.log('not number');
   }
 };
+
 //ex
 let language2 =[];
 
